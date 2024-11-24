@@ -5,7 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        "daraz": "#fa5409",
+      },
+      fontFamily:{
+        poppins: ["Poppins"],
+      },
+    },
   },
   plugins: [],
 }
