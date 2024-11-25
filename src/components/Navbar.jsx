@@ -21,7 +21,7 @@ const Navbar = () => {
         </ul>
       </div>
 
-      <div className='flex justify-between gap-3'>
+      <div className='flex justify-between gap-7'>
         <img className='w-9 h-8 cursor-pointer' src={searchIcon} alt="Cart" />
         <img className='w-9 h-8 cursor-pointer' src={cartIcon} alt="Search" />
         <button className='border-2 border-daraz px-4 rounded-2xl text-sky-900'>Sign in</button>
