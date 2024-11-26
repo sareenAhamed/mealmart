@@ -1,5 +1,6 @@
 import React from 'react'
 import Topmenu from './menu/Topmenu'
+import MenuItems from './menu/MenuItems'
 
 const Menu = () => {
   return (
@@ -13,6 +14,7 @@ const Menu = () => {
       <Topmenu />
       <hr className="my-4 border-t-2 border-gray-00" />
 
+      <MenuItems />
 
       
     </div>
