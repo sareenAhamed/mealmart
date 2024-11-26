@@ -3,13 +3,13 @@ import logo from '../assets/MealMart.png';
 import cartIcon from '../assets/cart-icon.png';
 import searchIcon from '../assets/serch-icon.png';
 import { Link } from 'react-router-dom';
+import Home from './Home'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className='container mx-auto md:flex md:justify-between md:items-center'>
-      {/* #fa5409 */}
+    <div className='container mx-auto md:flex md:justify-between md:items-center sticky top-0 z-50 bg-white'>
       <div className='w-48 h-20'>
         <img src={logo} alt="MealMart" />
       </div>
@@ -21,10 +21,10 @@ const Navbar = () => {
 
       <div className={`md:flex md:items-center md:pb-0 pb-12 md:static absolute bg-white md:z-auto left-0 w-full md:w-auto md:pl-0 pl-9 transition-allduration-500 ease-in ${open? 'top-20': 'top-[-490px]'}  lg:gap-60`}>
         <ul className='md:flex md:items-center text-sky-900 md:gap-7 md:ms-0 ms-5  md:mb-0 mb-3'>
-          <li className='md:py-0 py-2 hover:bg-orange-300 hover:ps-2 rounded duration-500'><Link to='/'>Home</Link></li>
-          <li className='md:py-0 py-2 hover:bg-orange-300 hover:ps-2 rounded duration-500'><Link to='/menu'>Menu</Link></li>
-          <li className='md:py-0 py-2 hover:bg-orange-300 hover:ps-2 rounded duration-500'><Link to='/mobile-app'>Mobile-App</Link></li>
-          <li className='md:py-0 py-2 hover:bg-orange-300 hover:ps-2 rounded duration-500'><Link to='/contact'>Contact</Link></li>
+          <li className='md:py-0 py-2 hover:bg-daraz hover:ps-2 rounded duration-500'><Link to='/'>Home</Link></li>
+          <li className='md:py-0 py-2 hover:bg-daraz hover:ps-2 rounded duration-500'><Link to='/menu'>Menu</Link></li>
+          <li className='md:py-0 py-2 hover:bg-daraz hover:ps-2 rounded duration-500'><Link to='/mobile-app'>Mobile-App</Link></li>
+          <li className='md:py-0 py-2 hover:bg-daraz hover:ps-2 rounded duration-500'><Link to='/contact'>Contact</Link></li>
         </ul>
 
         <div className='flex md:justify-between justify-around md:gap-7 gap-3'>
@@ -33,6 +33,8 @@ const Navbar = () => {
         <button className='border-2 border-daraz px-4 rounded-2xl text-sky-900'>Sign in</button>
       </div>
       </div>
+
+      
 
       
       
