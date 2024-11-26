@@ -19,6 +19,8 @@ function App() {
         <Route path='/mobile-app' element={<Mobile/>}/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
+
+      <Menu />
     </>
   )
 }
