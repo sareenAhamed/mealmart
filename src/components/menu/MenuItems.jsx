@@ -13,7 +13,7 @@ import {dishes} from '../../assets/Dishes'
 
 
 const MenuItems = () => {
-  const foodList = [
+  const [foodList, setFoodList] = useState([
     {image: cake, name: "Cake", type: "cake"},
     {image: dessert, name: "Dessert", type: "dessert"},
     {image: noodles, name: "Noodles", type: "noodles"},
@@ -22,11 +22,14 @@ const MenuItems = () => {
     {image: salad, name: "Salad", type: "salad"},
     {image: sandwich, name: "Sandwich", type: "sandwich"},
     {image: veg, name: "Pure Veg", type: "veg"},
-  ]
+  ])
     
   const [foodType, setFoodType] = useState("")
 
-  
+  // useEffect(()=>{
+  //   setDishItems(dishes)
+  // },[])
+
 
   return (
     <div>
@@ -35,7 +38,8 @@ const MenuItems = () => {
        {
         foodList.map((food) => (
           <div className='mx-2 flex-col p-2 scroll-snap-start'>
-            <img className='h-32 w-32 rounded-full' src={food.image} alt="Cake" onClick={() => setFoodType(food.type)}/>
+            <img className='h-32 w-32 rounded-full' src={food.image} alt="Cake" onClick={() => {setFoodType(food.type)}
+            }/>
             <p className='text-black opacity-80 font-semibold mx-10'>{food.name}</p>
           </div>
         ))
@@ -48,7 +52,7 @@ const MenuItems = () => {
     <div className="p-6">
       <h2 className="text-2xl font-semibold mb-6">Explore the best dishes around you</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {dishes.filter((dish) => dish.category === foodType).map((dish) => (
+        {dishes.filter((dish) => foodType === dish.category || foodType === "").map((dish) => (
           <div
             key={dish.id}
             className="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 hover:shadow-lg"
