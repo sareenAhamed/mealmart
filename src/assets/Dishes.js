@@ -47,6 +47,7 @@ export const dishes = [
       description: "Moist, flavorful dessert that satisfies cravings with every delightful bite.",
       image: cake1, 
       rating: 4.5,
+      category: "cake",
     },
     {
       id: 2,
@@ -55,6 +56,7 @@ export const dishes = [
       description: "Moist, flavorful dessert that satisfies cravings with every delightful bite.",
       image: cake2,
       rating: 5.0,
+      category: "cake",
     },
     {
       id: 3,
@@ -63,6 +65,7 @@ export const dishes = [
       description: "Moist, flavorful dessert that satisfies cravings with every delightful bite.",
       image: cake3,
       rating: 4.5,
+      category: "cake",
     },
     {
       id: 4,
@@ -71,6 +74,7 @@ export const dishes = [
       description: "Moist, flavorful dessert that satisfies cravings with every delightful bite.",
       image: cake4,
       rating: 5,
+      category: "cake",
     },
 
     // Dessert
@@ -81,6 +85,7 @@ export const dishes = [
         description: "Moist, flavorful dessert that satisfies cravings with every delightful bite.",
         image: dessert1, 
         rating: 4.5,
+        category: "dessert",
       },
       {
         id: 6,
@@ -89,6 +94,7 @@ export const dishes = [
         description: "A sweet, indulgent treat that brings joy to every occasion.",
         image: dessert2,
         rating: 5,
+        category: "dessert",
       },
       {
         id: 7,
@@ -97,6 +103,7 @@ export const dishes = [
         description: "A sweet, indulgent treat that brings joy to every occasion.",
         image: dessert3,
         rating: 4,
+        category: "dessert",
       },
       {
         id: 8,
@@ -105,6 +112,7 @@ export const dishes = [
         description: "A sweet, indulgent treat that brings joy to every occasion.",
         image: dessert4,
         rating: 5,
+        category: "dessert",
       },
 
       // Noodles
@@ -115,6 +123,7 @@ export const dishes = [
         description: "Delicious, versatile strands paired with flavorful sauces and fresh ingredients.",
         image: noodles1, 
         rating: 4,
+        category: "noodles",
       },
       {
         id: 10,
@@ -123,6 +132,7 @@ export const dishes = [
         description: "Delicious, versatile strands paired with flavorful sauces and fresh ingredients.",
         image: noodles2,
         rating: 4.5,
+        category: "noodles",
       },
       {
         id: 11,
@@ -131,6 +141,7 @@ export const dishes = [
         description: "Delicious, versatile strands paired with flavorful sauces and fresh ingredients.",
         image: noodles3,
         rating: 5,
+        category: "noodles",
       },
       {
         id: 12,
@@ -139,6 +150,7 @@ export const dishes = [
         description: "Delicious, versatile strands paired with flavorful sauces and fresh ingredients.",
         image: noodles4,
         rating: 4,
+        category: "noodles",
       },
 
         // Pasta
@@ -149,6 +161,7 @@ export const dishes = [
         description: "Rich, hearty dish with flavorful sauces and perfectly cooked noodles",
         image: pasta1, 
         rating: 4.5,
+        category: "pasta",
       },
       {
         id: 14,
@@ -157,6 +170,7 @@ export const dishes = [
         description: "Rich, hearty dish with flavorful sauces and perfectly cooked noodles",
         image: pasta2,
         rating: 4,
+        category: "pasta",
       },
       {
         id: 15,
@@ -165,6 +179,7 @@ export const dishes = [
         description: "Rich, hearty dish with flavorful sauces and perfectly cooked noodles",
         image: pasta3,
         rating: 4,
+        category: "pasta",
       },
       {
         id: 16,
@@ -173,6 +188,7 @@ export const dishes = [
         description: "Rich, hearty dish with flavorful sauces and perfectly cooked noodles",
         image: pasta4,
         rating: 3.5,
+        category: "pasta",
       },
 
        // Rolls
@@ -183,6 +199,7 @@ export const dishes = [
         description: "Soft wraps filled with flavorful ingredients, perfect for any craving.",
         image: rolls1,
         rating: 5,
+        category: "rolls",
       },
       {
         id: 18,
@@ -191,6 +208,7 @@ export const dishes = [
         description: "Soft wraps filled with flavorful ingredients, perfect for any craving.",
         image: rolls2,
         rating: 3.5,
+        category: "rolls",
       },
       {
         id: 19,
@@ -199,6 +217,7 @@ export const dishes = [
         description: "Soft wraps filled with flavorful ingredients, perfect for any craving.",
         image: rolls3,
         rating: 4.5,
+        category: "rolls",
       },
       {
         id: 20,
@@ -207,6 +226,7 @@ export const dishes = [
         description: "Soft wraps filled with flavorful ingredients, perfect for any craving.",
         image: rolls4,
         rating: 5,
+        category: "rolls",
       },
 
       // Salad
@@ -217,6 +237,7 @@ export const dishes = [
         description: "Fresh, vibrant mix of greens, veggies, and toppings for health.",
         image: salad1,
         rating: 4.5,
+        category: "salad",
       },
       {
         id: 22,
@@ -225,6 +246,7 @@ export const dishes = [
         description: "Fresh, vibrant mix of greens, veggies, and toppings for health.",
         image: salad2,
         rating: 5,
+        category: "salad",
       },
       {
         id: 23,
@@ -233,6 +255,7 @@ export const dishes = [
         description: "Fresh, vibrant mix of greens, veggies, and toppings for health.",
         image: salad3,
         rating: 5,
+        category: "salad",
       },
       {
         id: 24,
@@ -241,6 +264,7 @@ export const dishes = [
         description: "Fresh, vibrant mix of greens, veggies, and toppings for health.",
         image: salad4,
         rating: 4.5,
+        category: "salad",
       },
 
       // Sandwich
@@ -251,6 +275,7 @@ export const dishes = [
         description: "Layered bread filled with delicious meats, veggies, and flavorful spreads.",
         image: sandwich1,
         rating: 5,
+        category: "sandwich",
       },
       {
         id: 26,
@@ -259,6 +284,7 @@ export const dishes = [
         description: "Layered bread filled with delicious meats, veggies, and flavorful spreads.",
         image: sandwich2,
         rating: 4.5,
+        category: "sandwich",
       },
       {
         id: 27,
@@ -267,6 +293,7 @@ export const dishes = [
         description: "Layered bread filled with delicious meats, veggies, and flavorful spreads.",
         image: sandwich3,
         rating: 4.5,
+        category: "sandwich",
       },
       {
         id: 28,
@@ -275,6 +302,7 @@ export const dishes = [
         description: "Layered bread filled with delicious meats, veggies, and flavorful spreads.",
         image: sandwich4,
         rating: 5,
+        category: "sandwich",
       },
 
       // Vegetable
@@ -285,6 +313,7 @@ export const dishes = [
         description: "Wholesome, plant-based dishes rich in flavor, nutrients, and freshness.",
         image: veg1,
         rating: 4.5,
+        category: "veg",
       },
       {
         id: 30,
@@ -293,6 +322,7 @@ export const dishes = [
         description: "Wholesome, plant-based dishes rich in flavor, nutrients, and freshness.",
         image: veg2,
         rating: 4,
+        category: "veg",
       },
       {
         id: 31,
@@ -301,6 +331,7 @@ export const dishes = [
         description: "Wholesome, plant-based dishes rich in flavor, nutrients, and freshness.",
         image: veg3,
         rating: 5,
+        category: "veg",
       },
       {
         id: 32,
@@ -309,5 +340,6 @@ export const dishes = [
         description: "Wholesome, plant-based dishes rich in flavor, nutrients, and freshness.",
         image: veg4,
         rating: 3.5,
+        category: "veg",
       },
   ];
