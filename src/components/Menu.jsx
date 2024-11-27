@@ -15,8 +15,8 @@ const Menu = () => {
 
         </p>
       </div>
-      <Topmenu />
-      <hr className="my-4 border-t-2 border-gray-00" />
+      
+      
 
       <MenuItems />
 
