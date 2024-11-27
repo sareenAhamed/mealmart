@@ -1,5 +1,4 @@
 import React, { createContext, useEffect, useState } from 'react'
-import Topmenu from './menu/Topmenu'
 import MenuItems from './menu/MenuItems'
 
 
@@ -15,8 +14,6 @@ const Menu = () => {
 
         </p>
       </div>
-      
-      
 
       <MenuItems />
 

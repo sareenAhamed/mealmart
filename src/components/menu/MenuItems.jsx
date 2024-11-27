@@ -1,4 +1,4 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import cake from '../../assets/cake/cake.jpg'
 import dessert from '../../assets/dessert/dessert.jpg'
 import noodles from '../../assets/noodles/noodles.jpg'
@@ -26,6 +26,8 @@ const MenuItems = () => {
     
   const [foodType, setFoodType] = useState("")
 
+  
+
   return (
     <div>
     <div className='container mx-auto flex justify-around overflow-x-auto scrollbar-hide scroll-snap-x mandatory mt-5 ps-5 md:ps-0 '>
@@ -46,7 +48,7 @@ const MenuItems = () => {
     <div className="p-6">
       <h2 className="text-2xl font-semibold mb-6">Explore the best dishes around you</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        {dishes.map((dish) => (
+        {dishes.filter((dish) => dish.category === foodType).map((dish) => (
           <div
             key={dish.id}
             className="bg-white shadow-md rounded-lg overflow-hidden transition transform hover:scale-105 hover:shadow-lg"
