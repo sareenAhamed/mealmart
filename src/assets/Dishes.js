@@ -60,7 +60,7 @@ export const dishes = [
     },
     {
       id: 3,
-      name: "Pineapple Upside-Down",
+      name: "Pineapple Up-Down",
       price: "$17",
       description: "Moist, flavorful dessert that satisfies cravings with every delightful bite.",
       image: cake3,

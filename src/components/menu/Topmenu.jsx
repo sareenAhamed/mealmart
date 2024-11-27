@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { createContext, useState } from 'react'
 import cake from '../../assets/cake/cake.jpg'
 import dessert from '../../assets/dessert/dessert.jpg'
 import noodles from '../../assets/noodles/noodles.jpg'
@@ -8,58 +8,33 @@ import salad from '../../assets/salad/salad.jpg'
 import sandwich from '../../assets/sandwhich/sandwich.jpg'
 import veg from '../../assets/veg/veg.jpeg'
 
+const foodContext = createContext()
 
 const Topmenu = () => {
+  const foodList = [
+    {image: cake, name: "Cake", type: "cake"},
+    {image: dessert, name: "Dessert", type: "dessert"},
+    {image: noodles, name: "Noodles", type: "noodles"},
+    {image: pasta, name: "Pasta", type: "pasta"},
+    {image: rolls, name: "Rolls", type: "rolls"},
+    {image: salad, name: "Salad", type: "salad"},
+    {image: sandwich, name: "Sandwich", type: "sandwich"},
+    {image: veg, name: "Pure Veg", type: "veg"},
+  ]
+    
+  
+
   return (
     <div className='container mx-auto flex justify-around overflow-x-auto scrollbar-hide scroll-snap-x mandatory mt-5 ps-5 md:ps-0 '>
 
-        {/* menu 1 */}
-      <div className='mx-2 flex-col p-2 scroll-snap-start'>
-        <img className='h-32 w-32 rounded-full' src={cake} alt="Cake" />
-        <p className='text-black opacity-80 font-semibold mx-10'>Cake</p>
-      </div>
-
-       {/* menu 2 */}
-       <div className='mx-2 p-2 scroll-snap-start'>
-        <img className='h-32 w-32 rounded-full' src={dessert} alt="Dessert" />
-        <p className='text-black opacity-80 font-semibold mx-9'>Dessert</p>
-      </div>
-
-       {/* menu 3 */}
-       <div className='mx-2 p-2 scroll-snap-start scroll-snap-start'>
-        <img className='h-32 w-32 rounded-full' src={noodles} alt="Noodles" />
-        <p className='text-black opacity-80 font-semibold mx-9'>Noodles</p>
-      </div>
-
-       {/* menu 4 */}
-       <div className='mx-2 p-2 scroll-snap-start'>
-        <img className='h-32 w-32 rounded-full' src={pasta} alt="Pasta" />
-        <p className='text-black opacity-80 font-semibold mx-9'>Pasta</p>
-      </div>
-
-       {/* menu 5 */}
-       <div className='mx-2 p-2 scroll-snap-start'>
-        <img className='h-32 w-32 rounded-full ms-2' src={rolls} alt="Rolls" />
-        <p className='text-black opacity-80 font-semibold mx-12'>Rolls</p>
-      </div>
-
-       {/* menu 6 */}
-       <div className='mx-2 p-2 scroll-snap-start'>
-        <img className='h-32 w-32 rounded-full ms-4' src={salad} alt="Salad" />
-        <p className='text-black opacity-80 font-semibold mx-14'>Salad</p>
-      </div>
-
-       {/* menu 7 */}
-       <div className='mx-2 p-2 scroll-snap-start'>
-        <img className='h-32 w-32 rounded-full' src={sandwich} alt="Sandwich" />
-        <p className='text-black opacity-80 font-semibold mx-7'>Sandwich</p>
-      </div>
-
-       {/* menu 8 */}
-       <div className='mx-2 p-2 scroll-snap-start'>
-        <img className='h-32 w-32 rounded-full' src={veg} alt="Vegetable" />
-        <p className='text-black opacity-80 font-semibold mx-10'>Vegetable</p>
-      </div>
+       {
+        foodList.map((food) => (
+          <div className='mx-2 flex-col p-2 scroll-snap-start'>
+            <img className='h-32 w-32 rounded-full' src={food.image} alt="Cake" onClick={() => setFoodType(food.type)}/>
+            <p className='text-black opacity-80 font-semibold mx-10'>{food.name}</p>
+          </div>
+        ))
+       }
 
       
       

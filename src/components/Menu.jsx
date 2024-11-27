@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { createContext, useEffect, useState } from 'react'
 import Topmenu from './menu/Topmenu'
 import MenuItems from './menu/MenuItems'
 
+
 const Menu = () => {
+
+  
   return (
+   
     <div className='container mx-auto'>
       <div>
         <h3 className='text-4xl font-semibold my-7 font-poppins md:ps-0 ps-10'>Discover Our Menu</h3>
@@ -18,6 +22,7 @@ const Menu = () => {
 
       
     </div>
+    
   )
 }
 
