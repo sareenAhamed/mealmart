@@ -14,20 +14,22 @@ const Contact = () => {
           MealMart is a leading e-commerce platform specializing in delivering a wide variety of delicious, high-quality foods. From freshly prepared meals to premium packaged cuisines, MealMart ensures every bite is flavorful and satisfying. With a commitment to convenience and speedy delivery, MealMart caters to food lovers seeking hassle-free dining solutions for any occasion.
           </p>
           <div className="flex space-x-4 mt-4">
-            <a href="#" aria-label="Facebook" className="hover:text-daraz">
-              <i className="fab fa-facebook-f text-xl"></i>
+            <a href="#" aria-label="Facebook" className="hover:text-daraz text-2xl">
+              <ion-icon name="logo-facebook"></ion-icon>
+      
             </a>
-            <a href="#" aria-label="Twitter" className="hover:text-daraz">
-              <i className="fab fa-twitter text-xl"></i>
+            <a href="#" aria-label="Twitter" className="hover:text-daraz text-2xl">
+              <ion-icon name="logo-twitter"></ion-icon>
+              
             </a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-daraz">
-              <i className="fab fa-linkedin-in text-xl"></i>
+            <a href="#" aria-label="LinkedIn" className="hover:text-daraz text-2xl">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </div>
         </div>
 
         {/* Center Section */}
-        <div className="flex-1">
+        <div className="flex-1 mb-0 md:mb-10">
           <h2 className="text-white font-semibold text-lg mb-4">COMPANY</h2>
           <ul className="space-y-2 text-sm">
             <li>
@@ -46,7 +48,7 @@ const Contact = () => {
         </div>
 
         {/* Right Section */}
-        <div className="flex-1">
+        <div className="flex-1 mb-0 md:mb-24">
           <h2 className="text-white font-semibold text-lg mb-4">GET IN TOUCH</h2>
           <p className="text-sm mb-2">+94757922573</p>
           <p className="text-sm">info@mealmart.com</p>
