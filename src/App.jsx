@@ -9,6 +9,7 @@ import Signin from './components/Signin'
 import Register from './components/Register'
 import Cart from './components/Cart'
 import { useState } from 'react'
+import Checkout from './components/Checkout'
 
 
 function App() {
@@ -28,10 +29,15 @@ function App() {
         <Route path='/signin' element={<Signin/>}/>
         <Route path='/register' element={<Register/>}/>
         <Route path='/cart' element={<Cart/>}/>
+        <Route path='/checkout' element={<Checkout/>}/>
       </Routes>
 
-
       <Menu />
+
+      <Contact />
+
+      
+      
     </>
   )
 }

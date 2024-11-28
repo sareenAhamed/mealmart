@@ -1,5 +1,6 @@
 import React, { createContext, useEffect, useState } from 'react'
 import MenuItems from './menu/MenuItems'
+import Mobile from './Mobile'
 
 
 const Menu = () => {
@@ -16,6 +17,7 @@ const Menu = () => {
       </div>
 
       <MenuItems />
+      <Mobile />
 
       
     </div>
