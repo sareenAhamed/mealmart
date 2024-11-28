@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, } from 'react'
 import logo from '../assets/MealMart.png';
 import cartIcon from '../assets/cart-icon.png';
 import searchIcon from '../assets/serch-icon.png';
@@ -7,6 +7,16 @@ import Home from './Home'
 
 const Navbar = ({ handleOpenModal }) => {
   const [open, setOpen] = useState(false);
+
+  
+    // State to manage visibility of the Items component
+    const [isItemsVisible, setIsItemsVisible] = useState(true);
+
+    // Function to hide the Items component
+    const hideItems = () => {
+      setIsItemsVisible(false); // Set visibility to false
+    };
+    
 
   return (
     <div className='px-10 mx-auto md:flex md:justify-between md:items-center sticky top-0 z-50 bg-white'>
@@ -31,13 +41,10 @@ const Navbar = ({ handleOpenModal }) => {
         <img className='w-9 h-8 cursor-pointer' src={searchIcon} alt="Cart" />
         <img className='w-9 h-8 cursor-pointer' src={cartIcon} alt="Search" />
         <button className='border-2 border-daraz text-sky-900 px-4 py-1 rounded-xl hover:bg-red-500 hover:text-white transition' onClick={handleOpenModal}><Link to='/signin'>Sign in</Link></button>
-      </div>
+        </div>
+
       </div>
 
-      
-
-      
-      
     </div>
   )
 }

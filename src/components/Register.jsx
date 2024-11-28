@@ -1,16 +1,25 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Register = () => {
+
+  
+  const navigate = useNavigate();
+
+  const handleClose = () => {
+    navigate("/"); // Redirect to Menu page
+  };
+ 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-65 z-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
       <div className="bg-white rounded-lg p-6 shadow-lg w-96 relative">
         {/* Close Button */}
-        <Link to="/">
-          <button className="absolute top-2 right-2 text-gray-500 hover:text-red-500">
-            &times;
-          </button>
-        </Link>
+        <button
+          className="absolute top-2 right-2 text-gray-500 hover:text-red-500" onClick={handleClose}
+        >
+          &times;
+        </button>
+        
 
         <h2 className="text-2xl font-bold mb-4">Register</h2>
         <form>
@@ -60,7 +69,7 @@ const Register = () => {
           </div>
           <button
             type="submit"
-            className="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 transition"
+            className="w-full bg-red-500 text-white py-2 rounded-lg hover:bg-red-600 transition" onClick={handleClose}
           >
             Register
           </button>

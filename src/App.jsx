@@ -12,31 +12,13 @@ import { useState } from 'react'
 
 function App() {
   
-  const [isModalOpen, setIsModalOpen] = useState(false);  // Modal visibility
-  const [showRegister, setShowRegister] = useState(false); // To toggle between SignIn and Register
-
-  // Function to open the modal
-  const handleOpenModal = () => {
-    setIsModalOpen(true);
-  };
-
-  // Function to close the modal
-  const handleCloseModal = () => {
-    setIsModalOpen(false);
-    setShowRegister(false); // Reset to SignIn when closing
-  };
+ 
+ 
 
   return (
     <>
-      <Navbar handleOpenModal={handleOpenModal} />
-      {/* SignIn - Modal */}
-      {isModalOpen && (
-        <Signin
-          onClose={handleCloseModal}
-          showRegister={showRegister}
-          setShowRegister={setShowRegister}
-        />
-      )}
+      <Navbar/>
+     
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/menu' element={<Menu/>}/>
