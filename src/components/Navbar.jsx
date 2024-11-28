@@ -5,7 +5,7 @@ import searchIcon from '../assets/serch-icon.png';
 import { Link } from 'react-router-dom';
 import Home from './Home'
 
-const Navbar = () => {
+const Navbar = ({ handleOpenModal }) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -30,7 +30,7 @@ const Navbar = () => {
         <div className='flex md:justify-between justify-around md:gap-7 gap-3'>
         <img className='w-9 h-8 cursor-pointer' src={searchIcon} alt="Cart" />
         <img className='w-9 h-8 cursor-pointer' src={cartIcon} alt="Search" />
-        <button className='border-2 border-daraz px-4 rounded-2xl text-sky-900'>Sign in</button>
+        <button className='border-2 border-daraz text-sky-900 px-4 py-1 rounded-xl hover:bg-red-500 hover:text-white transition' onClick={handleOpenModal}><Link to='/signin'>Sign in</Link></button>
       </div>
       </div>
 

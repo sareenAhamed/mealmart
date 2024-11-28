@@ -33,7 +33,7 @@ const MenuItems = () => {
 
   return (
     <div>
-    <div className='container mx-auto flex justify-around overflow-x-auto scrollbar-hide scroll-snap-x mandatory mt-5 ps-5 md:ps-0 '>
+    <div className='container mx-auto flex justify-around overflow-x-auto scrollbar-hide scroll-snap-x mandatory mt-5 ps-5 md:ps-0'>
 
        {
         foodList.map((food) => (
