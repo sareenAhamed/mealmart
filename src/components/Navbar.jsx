@@ -8,16 +8,6 @@ import Home from './Home'
 const Navbar = ({ handleOpenModal }) => {
   const [open, setOpen] = useState(false);
 
-  
-    // State to manage visibility of the Items component
-    const [isItemsVisible, setIsItemsVisible] = useState(true);
-
-    // Function to hide the Items component
-    const hideItems = () => {
-      setIsItemsVisible(false); // Set visibility to false
-    };
-    
-
   return (
     <div className='px-10 mx-auto md:flex md:justify-between md:items-center sticky top-0 z-50 bg-white'>
       <div className='w-48 h-20'>
@@ -39,7 +29,10 @@ const Navbar = ({ handleOpenModal }) => {
 
         <div className='flex md:justify-between justify-around md:gap-7 gap-3'>
         <img className='w-9 h-8 cursor-pointer' src={searchIcon} alt="Cart" />
-        <img className='w-9 h-8 cursor-pointer' src={cartIcon} alt="Search" />
+        <Link to='/cart'>
+         <img className='w-9 h-8 cursor-pointer' src={cartIcon} alt="Search" />
+        </Link>
+
         <button className='border-2 border-daraz text-sky-900 px-4 py-1 rounded-xl hover:bg-red-500 hover:text-white transition' onClick={handleOpenModal}><Link to='/signin'>Sign in</Link></button>
         </div>
 

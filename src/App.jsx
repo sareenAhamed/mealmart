@@ -7,6 +7,7 @@ import Mobile from './components/Mobile'
 import Contact from './components/Contact'
 import Signin from './components/Signin'
 import Register from './components/Register'
+import Cart from './components/Cart'
 import { useState } from 'react'
 
 
@@ -26,6 +27,7 @@ function App() {
         <Route path='/contact' element={<Contact/>}/>
         <Route path='/signin' element={<Signin/>}/>
         <Route path='/register' element={<Register/>}/>
+        <Route path='/cart' element={<Cart/>}/>
       </Routes>
 
 
