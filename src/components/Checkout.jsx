@@ -1,6 +1,11 @@
-import React from "react";
+import React, {useContext} from "react";
+import { CartContext } from "../context/cartContext";
+
 
 const Checkout = () => {
+
+  const { subtotal, deliveryFee, total } = useContext(CartContext);
+
   return (
     <div className="container mx-auto p-8">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -68,15 +73,15 @@ const Checkout = () => {
           <div className="space-y-4 text-gray-700">
             <div className="flex justify-between border-b pb-2">
               <span>Subtotal</span>
-              <span>$0</span>
+              <span>${subtotal.toFixed(2)}</span>
             </div>
             <div className="flex justify-between border-b pb-2">
               <span>Delivery Fee</span>
-              <span>$0</span>
+              <span>${deliveryFee.toFixed(2)}</span>
             </div>
             <div className="flex justify-between font-bold">
               <span>Total</span>
-              <span>$0</span>
+              <span>${total.toFixed(2)}</span>
             </div>
           </div>
           <button

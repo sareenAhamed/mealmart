@@ -4,7 +4,7 @@ import { CartContext } from "../context/cartContext";
 
 const Cart = () => {
   const navigate = useNavigate();
-  const { cartFoods, setCartFoods } = useContext(CartContext);
+  const { cartFoods, setCartFoods, subtotal, deliveryFee, total } = useContext(CartContext);
 
   // Navigate to checkout
   const navigateCheckout = () => {
@@ -22,14 +22,14 @@ const Cart = () => {
     setCartFoods(updatedCart);
   };
 
-  // Calculate subtotal
-  const subtotal = cartFoods.reduce((total, food) => total + food.price, 0);
+  // // Calculate subtotal
+  // const subtotal = cartFoods.reduce((total, food) => total + food.price, 0);
 
-  // Set delivery fee (static for now)
-  const deliveryFee = cartFoods.length > 0 ? 5 : 0;
+  // // Set delivery fee (static for now)
+  // const deliveryFee = cartFoods.length > 0 ? 5 : 0;
 
-  // Calculate total
-  const total = subtotal + deliveryFee;
+  // // Calculate total
+  // const total = subtotal + deliveryFee;
 
   return (
     <div className="container mx-auto p-6 mt-6">
