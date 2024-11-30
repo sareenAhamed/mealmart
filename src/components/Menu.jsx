@@ -17,7 +17,7 @@ const Menu = () => {
       </div>
 
       <MenuItems />
-      <Mobile />
+    
 
       
     </div>

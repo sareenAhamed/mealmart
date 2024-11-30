@@ -3,9 +3,10 @@ import android from '../assets/android.png'
 import ios from '../assets/ios.png'
 
 
+
 const Mobile = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-6 bg-white my-16">
+    <div className="flex flex-col items-center justify-center p-6 bg-white mt-16">
       <h2 className="text-4xl font-semibold text-gray-800 text-center">
         For better experience download
       </h2>

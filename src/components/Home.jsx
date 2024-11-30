@@ -1,6 +1,7 @@
 import React from 'react'
 import bg from '../assets/home.png'
 
+
 const Home = () => {
   return (
     <div

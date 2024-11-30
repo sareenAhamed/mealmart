@@ -21,22 +21,19 @@ function App() {
   return (
     <>
     <CartProvider>
-      <Navbar/>
+        <Navbar/>
      
-      <Routes>
-        <Route path='/' element={<Home/>}/>
-        <Route path='/menu' element={<Menu/>}/>
-        <Route path='/mobile-app' element={<Mobile/>}/>
-        <Route path='/contact' element={<Contact/>}/>
-        <Route path='/signin' element={<Signin/>}/>
-        <Route path='/register' element={<Register/>}/>
-        <Route path='/cart' element={<Cart/>}/>
-        <Route path='/checkout' element={<Checkout/>}/>
-      </Routes>
+        <Routes>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/menu' element={<Menu/>}/>
+          <Route path='/mobile-app' element={<Mobile/>}/>
+          <Route path='/contact' element={<Contact/>}/>
+          <Route path='/signin' element={<Signin/>}/>
+          <Route path='/register' element={<Register/>}/>
+          <Route path='/cart' element={<Cart/>}/>
+          <Route path='/checkout' element={<Checkout/>}/>
+        </Routes>
 
-      <Menu />
-
-      <Contact />
       </CartProvider>
 
       
