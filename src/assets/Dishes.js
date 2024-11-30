@@ -43,7 +43,7 @@ export const dishes = [
     {
       id: 1,
       name: "Black Forest",
-      price: "$15",
+      price: 15,
       description: "Moist, flavorful dessert that satisfies cravings with every delightful bite.",
       image: cake1, 
       rating: 4.5,
@@ -52,7 +52,7 @@ export const dishes = [
     {
       id: 2,
       name: "Red Velvet",
-      price: "$25",
+      price: 25,
       description: "Moist, flavorful dessert that satisfies cravings with every delightful bite.",
       image: cake2,
       rating: 5.0,
@@ -61,7 +61,7 @@ export const dishes = [
     {
       id: 3,
       name: "Pineapple Up-Down",
-      price: "$17",
+      price: 17,
       description: "Moist, flavorful dessert that satisfies cravings with every delightful bite.",
       image: cake3,
       rating: 4.5,
@@ -70,7 +70,7 @@ export const dishes = [
     {
       id: 4,
       name: "Coffee Walnut",
-      price: "$23",
+      price: 23,
       description: "Moist, flavorful dessert that satisfies cravings with every delightful bite.",
       image: cake4,
       rating: 5,
@@ -81,7 +81,7 @@ export const dishes = [
     {
         id: 5,
         name: "Chocolate Mousse",
-        price: "$22",
+        price: 22,
         description: "Moist, flavorful dessert that satisfies cravings with every delightful bite.",
         image: dessert1, 
         rating: 4.5,
@@ -90,7 +90,7 @@ export const dishes = [
       {
         id: 6,
         name: "Gulab Jamun",
-        price: "$15",
+        price: 15,
         description: "A sweet, indulgent treat that brings joy to every occasion.",
         image: dessert2,
         rating: 5,
@@ -99,7 +99,7 @@ export const dishes = [
       {
         id: 7,
         name: "Cheese Cake",
-        price: "$24",
+        price: 24,
         description: "A sweet, indulgent treat that brings joy to every occasion.",
         image: dessert3,
         rating: 4,
@@ -108,7 +108,7 @@ export const dishes = [
       {
         id: 8,
         name: "Tiramisu",
-        price: "$18",
+        price: 18,
         description: "A sweet, indulgent treat that brings joy to every occasion.",
         image: dessert4,
         rating: 5,
@@ -119,7 +119,7 @@ export const dishes = [
     {
         id: 9,
         name: "Hakka Noodles",
-        price: "$19",
+        price: 19,
         description: "Delicious, versatile strands paired with flavorful sauces and fresh ingredients.",
         image: noodles1, 
         rating: 4,
@@ -128,7 +128,7 @@ export const dishes = [
       {
         id: 10,
         name: "Pad Thai Noodles",
-        price: "$20",
+        price: 20,
         description: "Delicious, versatile strands paired with flavorful sauces and fresh ingredients.",
         image: noodles2,
         rating: 4.5,
@@ -137,7 +137,7 @@ export const dishes = [
       {
         id: 11,
         name: "Garlic Butter Ramen",
-        price: "$16",
+        price: 16,
         description: "Delicious, versatile strands paired with flavorful sauces and fresh ingredients.",
         image: noodles3,
         rating: 5,
@@ -146,7 +146,7 @@ export const dishes = [
       {
         id: 12,
         name: "Schezwan Noodles",
-        price: "$28",
+        price: 28,
         description: "Delicious, versatile strands paired with flavorful sauces and fresh ingredients.",
         image: noodles4,
         rating: 4,
@@ -157,7 +157,7 @@ export const dishes = [
       {
         id: 13,
         name: "Alfredo Fettuccine",
-        price: "$27",
+        price: 27,
         description: "Rich, hearty dish with flavorful sauces and perfectly cooked noodles",
         image: pasta1, 
         rating: 4.5,
@@ -166,7 +166,7 @@ export const dishes = [
       {
         id: 14,
         name: "Spaghetti Bolognese",
-        price: "$15",
+        price: 15,
         description: "Rich, hearty dish with flavorful sauces and perfectly cooked noodles",
         image: pasta2,
         rating: 4,
@@ -175,7 +175,7 @@ export const dishes = [
       {
         id: 15,
         name: "Penne Arrabbiata",
-        price: "$25",
+        price: 25,
         description: "Rich, hearty dish with flavorful sauces and perfectly cooked noodles",
         image: pasta3,
         rating: 4,
@@ -184,7 +184,7 @@ export const dishes = [
       {
         id: 16,
         name: "Pesto Fusilli",
-        price: "$16",
+        price: 16,
         description: "Rich, hearty dish with flavorful sauces and perfectly cooked noodles",
         image: pasta4,
         rating: 3.5,
@@ -195,7 +195,7 @@ export const dishes = [
        {
         id: 17,
         name: "Spring Rolls",
-        price: "$15",
+        price: 15,
         description: "Soft wraps filled with flavorful ingredients, perfect for any craving.",
         image: rolls1,
         rating: 5,
@@ -204,7 +204,7 @@ export const dishes = [
       {
         id: 18,
         name: "Chicken Kathi Roll",
-        price: "$22",
+        price: 22,
         description: "Soft wraps filled with flavorful ingredients, perfect for any craving.",
         image: rolls2,
         rating: 3.5,
@@ -213,7 +213,7 @@ export const dishes = [
       {
         id: 19,
         name: "Veg Sushi Rolls",
-        price: "$18",
+        price: 18,
         description: "Soft wraps filled with flavorful ingredients, perfect for any craving.",
         image: rolls3,
         rating: 4.5,
@@ -222,7 +222,7 @@ export const dishes = [
       {
         id: 20,
         name: "Paneer Tikka Wrap",
-        price: "$23",
+        price: 23,
         description: "Soft wraps filled with flavorful ingredients, perfect for any craving.",
         image: rolls4,
         rating: 5,
@@ -233,7 +233,7 @@ export const dishes = [
       {
         id: 21,
         name: "Caesar Salad",
-        price: "$21",
+        price: 21,
         description: "Fresh, vibrant mix of greens, veggies, and toppings for health.",
         image: salad1,
         rating: 4.5,
@@ -242,7 +242,7 @@ export const dishes = [
       {
         id: 22,
         name: "Greek Salad",
-        price: "$15",
+        price: 15,
         description: "Fresh, vibrant mix of greens, veggies, and toppings for health.",
         image: salad2,
         rating: 5,
@@ -251,7 +251,7 @@ export const dishes = [
       {
         id: 23,
         name: "Waldorf Salad",
-        price: "$27",
+        price: 27,
         description: "Fresh, vibrant mix of greens, veggies, and toppings for health.",
         image: salad3,
         rating: 5,
@@ -260,7 +260,7 @@ export const dishes = [
       {
         id: 24,
         name: "Quinoa and Avocado",
-        price: "$15",
+        price: 15,
         description: "Fresh, vibrant mix of greens, veggies, and toppings for health.",
         image: salad4,
         rating: 4.5,
@@ -271,7 +271,7 @@ export const dishes = [
       {
         id: 25,
         name: "Club Sandwich",
-        price: "$15",
+        price: 15,
         description: "Layered bread filled with delicious meats, veggies, and flavorful spreads.",
         image: sandwich1,
         rating: 5,
@@ -280,7 +280,7 @@ export const dishes = [
       {
         id: 26,
         name: "Grilled Cheese",
-        price: "$20",
+        price: 20,
         description: "Layered bread filled with delicious meats, veggies, and flavorful spreads.",
         image: sandwich2,
         rating: 4.5,
@@ -289,7 +289,7 @@ export const dishes = [
       {
         id: 27,
         name: "Veggie Panini",
-        price: "$16",
+        price: 16,
         description: "Layered bread filled with delicious meats, veggies, and flavorful spreads.",
         image: sandwich3,
         rating: 4.5,
@@ -298,7 +298,7 @@ export const dishes = [
       {
         id: 28,
         name: "Egg Salad Sandwich",
-        price: "$21",
+        price: 21,
         description: "Layered bread filled with delicious meats, veggies, and flavorful spreads.",
         image: sandwich4,
         rating: 5,
@@ -309,7 +309,7 @@ export const dishes = [
       {
         id: 29,
         name: "Paneer Butter Masala",
-        price: "$23",
+        price: 23,
         description: "Wholesome, plant-based dishes rich in flavor, nutrients, and freshness.",
         image: veg1,
         rating: 4.5,
@@ -318,7 +318,7 @@ export const dishes = [
       {
         id: 30,
         name: "Veg Kurma",
-        price: "$12",
+        price: 12,
         description: "Wholesome, plant-based dishes rich in flavor, nutrients, and freshness.",
         image: veg2,
         rating: 4,
@@ -327,7 +327,7 @@ export const dishes = [
       {
         id: 31,
         name: "Vegetable Biryani",
-        price: "$25",
+        price: 25,
         description: "Wholesome, plant-based dishes rich in flavor, nutrients, and freshness.",
         image: veg3,
         rating: 5,
@@ -336,7 +336,7 @@ export const dishes = [
       {
         id: 32,
         name: "Spinach and Corn",
-        price: "$14",
+        price: 14,
         description: "Wholesome, plant-based dishes rich in flavor, nutrients, and freshness.",
         image: veg4,
         rating: 3.5,

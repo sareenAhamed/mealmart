@@ -78,7 +78,7 @@ const MenuItems = () => {
                   </p>
                   <div className="flex items-center justify-between mt-4">
                     <span className="text-xl font-bold text-daraz">
-                      {dish.price}
+                      ${dish.price}
                     </span>
                     <div className="flex items-center text-daraz">
                       {"★".repeat(Math.floor(dish.rating))}
