@@ -10,6 +10,7 @@ import Register from './components/Register'
 import Cart from './components/Cart'
 import { useState } from 'react'
 import Checkout from './components/Checkout'
+import CartProvider from './context/cartContext'
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 
   return (
     <>
+    <CartProvider>
       <Navbar/>
      
       <Routes>
@@ -35,6 +37,7 @@ function App() {
       <Menu />
 
       <Contact />
+      </CartProvider>
 
       
       

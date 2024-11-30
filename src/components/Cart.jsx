@@ -1,14 +1,27 @@
-import React from "react";
+import React, {useContext, useEffect} from "react";
 import { useNavigate } from "react-router-dom";
+import { CartContext } from "../context/cartContext";
+
+
 
 const Cart = () => {
   const navigate = useNavigate()
   const navigateCheckout = () => {
     navigate("/checkout")
   }
+
+  const { cartFoods } = useContext(CartContext);
+
+   // Log the cart contents whenever it updates
+   useEffect(() => {
+    console.log("Cart updated:", cartFoods);
+  }, [cartFoods]);
+
+
   return (
     <div className="container mx-auto p-6 mt-6">
       <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
+        
         {/* Cart Items Section */}
         <div className="col-span-2">
           <table className="w-full border-collapse">
@@ -21,11 +34,14 @@ const Cart = () => {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td colSpan="6" className="text-center py-4">
-                  Your cart is empty.
-                </td>
-              </tr>
+              {cartFoods.map((food) => (
+                <tr>
+                  <td>{food.image}</td>
+                  <td>{food.name}</td>
+                  <td>{food.price}</td>
+                  <td><button>X</button></td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
