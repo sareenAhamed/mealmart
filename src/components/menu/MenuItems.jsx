@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
+import React, { useState, useContext } from "react";
 import cake from "../../assets/cake/cake.jpg";
 import dessert from "../../assets/dessert/dessert.jpg";
 import noodles from "../../assets/noodles/noodles.jpg";
@@ -21,46 +21,42 @@ const MenuItems = () => {
     { image: sandwich, name: "Sandwich", type: "sandwich" },
     { image: veg, name: "Pure Veg", type: "veg" },
   ]);
-
-  const [foodType, setFoodType] = useState("");
+  const [foodType, setFoodType] = useState("");  // Default empty type, can be modified for 'All' category
   const { cartFoods, setCartFoods } = useContext(CartContext);
-
 
   // Function to add a dish to the cart
   const addCart = (dish) => {
     setCartFoods((prevCart) => [...prevCart, dish]);
   };
 
- 
   return (
     <div>
+      {/* Category Filter Section */}
       <div className="container mx-auto flex justify-around overflow-x-auto scrollbar-hide scroll-snap-x mandatory mt-5 ps-5 md:ps-0">
+        
         {foodList.map((food, index) => (
           <div key={index} className="mx-2 flex-col p-2 scroll-snap-start">
             <img
-              className="h-32 w-32 rounded-full"
+              className="h-32 w-32 rounded-full cursor-pointer"
               src={food.image}
               alt={food.name}
-              onClick={() => setFoodType(food.type)}
+              onClick={() => setFoodType(food.type)} // Set selected food category
             />
-            <p className="text-black opacity-80 font-semibold mx-10">
-              {food.name}
-            </p>
+            <p className="text-black opacity-80 font-semibold mx-10">{food.name}</p>
           </div>
         ))}
       </div>
 
       <hr className="my-4 border-t-2 border-gray-200" />
 
+      {/* Dish Display Section */}
       <div className="p-6">
         <h2 className="text-2xl font-semibold mb-6">
           Explore the best dishes around you
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {dishes
-            .filter(
-              (dish) => foodType === dish.category || foodType === ""
-            )
+            .filter((dish) => foodType === dish.category || foodType === "")
             .map((dish) => (
               <div
                 key={dish.id}
@@ -77,9 +73,7 @@ const MenuItems = () => {
                     {dish.description}
                   </p>
                   <div className="flex items-center justify-between mt-4">
-                    <span className="text-xl font-bold text-daraz">
-                      ${dish.price}
-                    </span>
+                    <span className="text-xl font-bold text-daraz">${dish.price}</span>
                     <div className="flex items-center text-daraz">
                       {"★".repeat(Math.floor(dish.rating))}
                       {dish.rating % 1 !== 0 && "☆"}

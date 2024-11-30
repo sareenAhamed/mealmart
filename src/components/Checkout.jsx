@@ -7,7 +7,7 @@ const Checkout = () => {
   const { subtotal, deliveryFee, total } = useContext(CartContext);
 
   return (
-    <div className="container mx-auto p-8">
+    <div className="container mx-auto p-8 py-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Delivery Information Section */}
         <div>

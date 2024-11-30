@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../context/cartContext";
 
@@ -11,20 +11,14 @@ const Cart = () => {
     navigate("/checkout");
   };
 
-  // Log cart updates
-  useEffect(() => {
-    console.log("Cart updated:", cartFoods);
-  }, [cartFoods]);
-
   // Remove an item from the cart
   const removeItem = (id) => {
     const updatedCart = cartFoods.filter((food) => food.id !== id);
     setCartFoods(updatedCart);
   };
 
-  
   return (
-    <div className="container mx-auto p-6 mt-6">
+    <div className="container mx-auto p-6 mt-6 py-20">
       <div className="grid md:grid-cols-3 grid-cols-1 gap-6">
 
         {/* Cart Items Section */}
