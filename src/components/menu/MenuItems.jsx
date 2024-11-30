@@ -21,26 +21,35 @@ const MenuItems = () => {
     { image: sandwich, name: "Sandwich", type: "sandwich" },
     { image: veg, name: "Pure Veg", type: "veg" },
   ]);
+
   const [foodType, setFoodType] = useState("");  // Default empty type, can be modified for 'All' category
   const { cartFoods, setCartFoods } = useContext(CartContext);
+
+  // State to track added items
+  const [addedToCart, setAddedToCart] = useState(new Set());
 
   // Function to add a dish to the cart
   const addCart = (dish) => {
     setCartFoods((prevCart) => [...prevCart, dish]);
+    setAddedToCart((prev) => new Set(prev.add(dish.id))); // Track added dish by id
   };
 
   return (
     <div>
       {/* Category Filter Section */}
       <div className="container mx-auto flex justify-around overflow-x-auto scrollbar-hide scroll-snap-x mandatory mt-5 ps-5 md:ps-0">
-        
         {foodList.map((food, index) => (
-          <div key={index} className="mx-2 flex-col p-2 scroll-snap-start">
+          <div
+            key={index}
+            className="mx-2 flex-col p-2 scroll-snap-start"
+            onClick={() => setFoodType(food.type)} // Set selected food category
+          >
             <img
-              className="h-32 w-32 rounded-full cursor-pointer"
+              className={`h-32 w-32 rounded-full cursor-pointer transition-all hover:border-4 hover:border-daraz hover:p-2 ${
+                foodType === food.type ? " border-4 border-daraz p-2" : ""
+              }`}
               src={food.image}
               alt={food.name}
-              onClick={() => setFoodType(food.type)} // Set selected food category
             />
             <p className="text-black opacity-80 font-semibold mx-10">{food.name}</p>
           </div>
@@ -80,10 +89,14 @@ const MenuItems = () => {
                     </div>
                   </div>
                   <button
-                    className="mt-2 w-full py-2 px-4 text-white bg-daraz rounded-lg hover:bg-orange-400"
+                    className={`mt-2 w-full py-2 px-4 text-white rounded-lg ${
+                      addedToCart.has(dish.id)
+                        ? "bg-green-500 hover:bg-green-400"
+                        : "bg-daraz hover:bg-orange-400"
+                    }`}
                     onClick={() => addCart(dish)}
                   >
-                    Add to Cart
+                    {addedToCart.has(dish.id) ? "Added to Cart" : "Add to Cart"}
                   </button>
                 </div>
               </div>
