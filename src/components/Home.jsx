@@ -2,6 +2,8 @@ import React from "react";
 import bg from "../assets/home.png";
 import { Element } from "react-scroll";
 
+
+
 const Home = () => {
   return (
     <Element name="home">
@@ -15,7 +17,7 @@ const Home = () => {
           borderRadius: "15px",
         }}
       >
-        <div className="p-14 rounded-lg bg-black opacity-70">
+        <div className="p-14 rounded-lg bg-black opacity-70 animate-fadeIn">
           <h1 className="text-4xl md:text-5xl font-bold leading-snug text-white">
             Satisfy Your Cravings Today.
           </h1>
