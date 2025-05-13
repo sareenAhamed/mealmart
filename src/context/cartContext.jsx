@@ -1,10 +1,10 @@
 import React, { createContext, useState, useEffect } from "react";
 
-// Create CartContext to be used in other components
 export const CartContext = createContext();
 
 const CartProvider = ({ children }) => {
   const [cartFoods, setCartFoods] = useState(() => {
+   
     // Try to get cart data from local storage on page load
     const savedCart = localStorage.getItem("cartFoods");
     return savedCart ? JSON.parse(savedCart) : [];
